@@ -1,5 +1,8 @@
 # Adding config.py file.
 config.py
+ratings.csv
+movies_metadata.csv
+wiki_movies_raw.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
