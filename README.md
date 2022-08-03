@@ -2,7 +2,7 @@
 
 An exercise in performing an Extract, Transform, Load (ETL) process to create data pipelines using Python, Pandas and PostgreSQL using very large data files.
 
-![ETL_Graphic](https://github.com/rloufoster/Movies/blob/main/ETL_Graphic.png?raw=true)
+![ETL_Graphic](https://github.com/rloufoster/Movies/commit/90bf9d99f19ace46dce7a3bf7f78869c17cf04f3)
 
 
 ## Objectives
