@@ -1,45 +1,32 @@
 # Movies_ETL
 
-Extract, Transform & Load
+An exercise in performing an Extract, Transform, Load (ETL) process to create data pipelines using Python, Pandas and PostgreSQL using very large data files.
+
+![ETL_Graphic]()
+
 
 ## Objectives
 
-* Create an automated ETL pipeline.
+The purpose of this project was to create an automated pipeline that takes in new data, performs the appropriate transformations, and loads the data into existing tables that is connected to a database. The chosen topic is all about Movies from 1990 to 2018 and combining the information from 3 different resources.
 
-* Extract data from multiple sources
+## Method
 
-  - Wikipedia
-  - Kaggle
-  - MovieLens
-  
-* Clean and transform the data automatically using Pandas and regular expressions.
+Create an ETL pipeline using Jupyter Notebooks and PostgreSQL from raw data to SQL database.
 
-* Create new tables by loading newly created Dataframes into PostgreSQL
+*  **Extract:** Collected data from multiple sources using Python in Jupyter Notebook.
+        * Wikipedia: format- .json, file size: 6.2MB), 7,311 movie titles and information about the movies.
+        * Kaggle: 2 files (format: .csv)
+            * a metadata file from [The Movie Database](https://www.themoviedb.org/) containing movie details with 45.5 thousand entries. (File size: 34.4MB) 
+            * a dataset from [MovieLens](https://movielens.org/) containing over 26 million movie ratings/review. (File size: 709.6MB)
+
+* **Transform:** Clean and structure data using Pandas and regular expressions (RegEx) to achieve desired form. (i.e. using RegEx to parse data and transform text into numbers.
+        * Deleting bad data (corrupted or missing), removing duplicate rows, and consolidating columns.
+        * Using RegEx to parse data and transform text into numbers
+
+* **Load:** Export transformed data into an ProgresSQL Database using PQAdmin.
 
 
-## Summary
-
-* A function was created that took in three arguments: Wikipedia Raw Data, Kaggle Metadata, and MovieLens Rating Data (Kaggle)
-
-Then I used the code I wrote during the module's lesson and applied it to the function, so that the function would perform all of the transformation steps. I also added the lesson code I wrote for the load steps and applied it to the function. I confirmed the function worked correctly on the current Wikipedia and Kaggle data.
-
-Several assumptions are being made in this automated ETL pipeline.
-
-The uploaded data will stay in the same formats:
-
-Wikipedia data in JSON format.
-
-Kaggle metadata and rating data in CSV formats.
-
-There are null or mostly null columns that need to be removed.
-
-The list of 'alternate titles' is valid.
-
-There will not be any new 'alternate titles' added to the data.
-
-The data types will be correct when loaded into SQL.
-
-When creating regular expressions for budget and box office figures, we need to capture 'million' and 'billion' as expressions.
+## Results
 
 
 
