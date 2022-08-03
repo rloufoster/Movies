@@ -2,7 +2,7 @@
 
 An exercise in performing an Extract, Transform, Load (ETL) process to create data pipelines using Python, Pandas and PostgreSQL using very large data files.
 
-![ETL_Graphic]()
+![ETL_Graphic](https://github.com/rloufoster/Movies/blob/main/ETL_Graphic.png?raw=true)
 
 
 ## Objectives
@@ -19,14 +19,43 @@ Create an ETL pipeline using Jupyter Notebooks and PostgreSQL from raw data to S
             * a metadata file from [The Movie Database](https://www.themoviedb.org/) containing movie details with 45.5 thousand entries. (File size: 34.4MB) 
             * a dataset from [MovieLens](https://movielens.org/) containing over 26 million movie ratings/review. (File size: 709.6MB)
 
-* **Transform:** Clean and structure data using Pandas and regular expressions (RegEx) to achieve desired form. (i.e. using RegEx to parse data and transform text into numbers.
+* **Transform:** Clean and structure data using Pandas and regular expressions (RegEx) to achieve desired form. (i.e. using RegEx to 
+    parse data and transform text into numbers.
         * Deleting bad data (corrupted or missing), removing duplicate rows, and consolidating columns.
         * Using RegEx to parse data and transform text into numbers
 
 * **Load:** Export transformed data into an ProgresSQL Database using PQAdmin.
 
-
 ## Results
+
+After cleaning and merging, two new tables were created using Python in Jupyter Notebook and exporting the tables into PostgreSQL.  
+
+**Movies Table**
+
+![movies1_query_table](https://github.com/rloufoster/Movies/blob/main/movies_query.png)
+
+
+
+**Ratings Table**
+
+![ratings_query_table](https://github.com/rloufoster/Movies/blob/main/ratings_query.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
